@@ -12,10 +12,6 @@ def sol(y_sol):
     '''
     pensize(3)
     trait(-380, y_sol, 380, y_sol)
-    
-
-    
-
 
 if __name__ == '__main__':
     sol(0)

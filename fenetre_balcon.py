@@ -22,7 +22,6 @@ def fenetre_balcon(x,y):
     fillcolor("white")
     begin_fill()
     rectangle(x,y,30,50)
-
     right(90)
     forward(-25)
     left(90)

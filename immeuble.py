@@ -15,6 +15,7 @@ def immeuble(x, y_sol):
     Cette fonction dessine un immeuble Le nombre d'étage est compris aléatoirement entre 0 et 4
     La couleur de la façade et la couleur de la porte sont tirées au hasard
     '''
+    x = 20
     # Nombre d'étage (aléatoire)
 
     pass
@@ -32,8 +33,7 @@ def immeuble(x, y_sol):
     pass
 
     # Dessin du toit
-
-    pass
+    toit(x, 0, 2)
 
 if __name__ == '__main__':
     immeuble(0,0)

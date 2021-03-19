@@ -9,7 +9,6 @@ def toit1(x, y_sol, niveau):
     Cette fonction dessine un toit triangulaire noir de base 160 pixels
     et de hauteur centrale 40 pixels
     '''
-    
     up()
     goto(x,y_sol+(60*niveau))
     left(180)

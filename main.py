@@ -14,7 +14,7 @@ def main():
     # Dessin du sol de la rue
     sol(y_sol)
     # Dessin des 4 immeubles
-
+    immeuble(10, -150)
 
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()

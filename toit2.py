@@ -9,19 +9,14 @@ def toit2(x, y_sol, niveau):
     Cette fonction dessine un toit triangulaire noir de base 160 pixels
     et de hauteur centrale 40 pixels
     '''
-    
+    pensize(4)
     up()
     goto(x,y_sol+(60*niveau))
-    left(180)
     forward(140//2+10)
-    left(180)
     down()
     color("black")
     begin_fill()
     forward(160)
-    left(180-20)
-    forward(85)
-    left(40)
     forward(85)
     end_fill()
 
