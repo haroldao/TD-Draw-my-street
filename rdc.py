@@ -18,11 +18,12 @@ def rdc(x, y_sol, c_facade, c_porte):
         Puis les 3 élements : 1 porte et 2 fenêtres disposées au hasard
     '''
     facade(x,y_sol, c_facade, 0)
-
+    home()
     liste=["porte","fenetre","fenetre"]
     shuffle(liste)
-    listepos=[x-50,x,x+50]
-    a=randint(0,2)   
+    listepos=[x-50, x, x+50]
+    a=randint(0,2)
+
     if liste[a]=="porte":
         b=randint(0,1)
         if b==1:
@@ -36,8 +37,7 @@ def rdc(x, y_sol, c_facade, c_porte):
             del listepos[a]
         print(liste)
         print(listepos)
-            
-    
+          
     c=randint(0,1)
     
     if liste[c]=="fenetre":
@@ -69,8 +69,6 @@ def rdc(x, y_sol, c_facade, c_porte):
         print(liste)
         print(listepos)
     # Construit les 3 éléments (1 porte et 2 fenetres)
-
-    
 
 if __name__ == '__main__':
     rdc(0,0,"red","green")
