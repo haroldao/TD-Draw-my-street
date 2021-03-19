@@ -12,7 +12,7 @@ def main():
     # On définit la hauteur du sol
     y_sol = -200
     # Dessin du sol de la rue
-
+    sol(y_sol)
     # Dessin des 4 immeubles
 
 
