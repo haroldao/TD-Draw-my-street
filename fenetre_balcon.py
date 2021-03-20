@@ -2,7 +2,8 @@ from turtle import *
 from rectangle import rectangle
 from trait import trait
 
-def fenetre_balcon(x,y):
+
+def fenetre_balcon(x, y):
     print("\nFenetre Balcon file")
     '''
     Paramètres :
@@ -14,33 +15,34 @@ def fenetre_balcon(x,y):
     '''
     # porte-fenetre
     up()
-    goto(x,y)
-    left(180)
-    forward(30//2)
-    left(180)
+    goto(x-15, y)
     down()
     pencolor("black")
     fillcolor("white")
     begin_fill()
-    rectangle(x,y,30,50)
-    right(90)
-    forward(-25)
-    left(90)
-    trait(xcor()-5,ycor(),xcor()+35,ycor())
-    up()
-    right(90)
-    forward(25)
-    right(90)
-    trait(xcor(),ycor(),xcor()-40,ycor())
-    for i in range(9):
-        trait(xcor(),ycor(),xcor(),ycor()+25)
-        up()
-        goto(xcor()+45//9,ycor()-25)
+    rectangle(x-15, y, 30, 50)
     end_fill()
+    up()
+    pencolor("black")
+    left(90)
 
+    trait((xcor() - 4.2), ycor(),
+          (xcor() - 4.2), ycor())
+
+    trait(xcor(), ycor(),
+          xcor(), (ycor() + 25))
+
+    # For loop pour les barreaux
+    for i in range(9):
+
+        trait((xcor() + 4.2), ycor() - 25,
+              (xcor() + 4.2), ycor())
+
+    right(90)
+    rectangle(x - 15, y, 38.4, 25)
 
 
 if __name__ == '__main__':
-    fenetre_balcon(0,0)
+    fenetre_balcon(0, 0)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
