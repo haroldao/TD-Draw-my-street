@@ -19,7 +19,7 @@ def immeuble(x, y_sol):
     # Nombre d'étage (aléatoire)
 
     nb_etage = randint(0, 4) # random entre 0 et 4
-    print(nb_etage)
+    print("Nombre d'étage", nb_etage)
 
     #Couleurs des éléments (aléatoire)
 
@@ -36,7 +36,7 @@ def immeuble(x, y_sol):
       etage(x, y_sol, c_facade, niveau+1)
 
     # Dessin du toit
-    toit(x, y_sol, nb_etage)
+    toit(x, y_sol, nb_etage+1)
 
 if __name__ == '__main__':
     immeuble(0, 0)
