@@ -2,6 +2,7 @@ from turtle import *
 from rectangle import rectangle
 
 def facade(x, y_sol, couleur, niveau):
+    print("\nFacade file")
     '''
     Paramètres :
         x : abcisse du centre de la façade

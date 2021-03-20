@@ -2,6 +2,7 @@ from rectangle import rectangle
 from turtle import *
 
 def fenetre(x,y):
+    print("\n Fenetre file")
     '''
     Paramètres :
         x est l'abcisse du centre de la fenêtre

@@ -5,6 +5,7 @@ from trait import trait
 
 # ----- Sol de la rue -----
 def sol(y_sol):
+    print("\nSol file")
     '''
     Paramètres
         y_sol : ordonnée du sol du la rue

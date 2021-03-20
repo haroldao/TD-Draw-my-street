@@ -4,6 +4,7 @@ from toit2 import toit2
 import turtle
 
 def toit(x, y_sol, niveau):
+    print("\nToit file")
     '''
     Paramètres
         x : abscisse du centre de l'étage
@@ -12,13 +13,14 @@ def toit(x, y_sol, niveau):
     Cette fonction dessine au hasard un des 2 types de toit
 
     '''
-    a = randint(0,1)
+    print("Toit file")
+    a = randint(0, 1)
     if a == 0:
-        toit1(x,y_sol,niveau)
+        toit1(x, y_sol, niveau)
     else:
-        toit2(x,y_sol,niveau)
+        toit2(x, y_sol, niveau)
     
 if __name__ == '__main__':
-    toit(0,0,0)
+    toit(0, 0, 0)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()

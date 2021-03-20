@@ -1,6 +1,7 @@
 from turtle import * 
 
 def trait(x1,y1,x2,y2):
+    print("\nTrait file")
     '''
     Paramètres
         x1, y1 : coordonnées du début du trait

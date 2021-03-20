@@ -1,6 +1,7 @@
 from turtle import *
 
 def rectangle(x,y,w,h):
+    print("\nRectangle file")
     '''
     Paramètres
         x, y : coordonnées du centre de la base de rectangle

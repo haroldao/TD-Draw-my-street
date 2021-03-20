@@ -6,6 +6,7 @@ from fenetre import fenetre
 from turtle import *
 
 def rdc(x, y_sol, c_facade, c_porte):
+    print("\nRDC File")
     '''
     Paramètres
         x : (int) abscisse du centre

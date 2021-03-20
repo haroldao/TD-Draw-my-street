@@ -2,6 +2,7 @@ from turtle import *
 from rectangle import rectangle
 
 def porte(x,y,couleur):
+    print("\nPorte file")
     '''
     Paramètres :
         x est l'abcisse du centre de la porte

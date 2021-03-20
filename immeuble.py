@@ -8,6 +8,7 @@ from toit import toit
 import turtle
 
 def immeuble(x, y_sol):
+    print("\n Immeuble file")
     '''
     Paramètres
         x : abscisse du centre de l'étage

@@ -5,6 +5,7 @@ from fenetre_balcon import fenetre_balcon
 import turtle
 
 def etage(x, y_sol, couleur, niveau):
+    print("\n Etage file")
     '''
     Paramètres
         x : abscisse du centre de l'étage
@@ -14,12 +15,20 @@ def etage(x, y_sol, couleur, niveau):
     Remarque
        Cette fonction dessine un étage d'un immeuble
     '''
+    y = y_sol + niveau * 60
     # dessin des murs
-
+    facade(x, y_sol, couleur, niveau)
     # dessin des 3 Eléments
-    pass
+    for i in range(3):
+      i = randint(1, 2)
+      print("i", i)
+      if i == 1:
+        fenetre(x, y)
+      else:
+        fenetre_balcon(x, y)
+
 
 if __name__ == '__main__':
-    etage(0,0,"red",0)
+    etage(0, 0, "red", 0)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()

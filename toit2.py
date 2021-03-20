@@ -1,6 +1,7 @@
 from turtle import *
 
 def toit2(x, y_sol, niveau):
+    print("\nToit2 file")
     '''
     Paramètres :
         x : abcisse du centre du toit

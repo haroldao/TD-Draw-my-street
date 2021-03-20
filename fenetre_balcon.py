@@ -3,6 +3,7 @@ from rectangle import rectangle
 from trait import trait
 
 def fenetre_balcon(x,y):
+    print("\nFenetre Balcon file")
     '''
     Paramètres :
         x est l'abcisse du centre de la porte-fenetre-balcon
