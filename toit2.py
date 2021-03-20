@@ -1,5 +1,6 @@
 from turtle import *
 
+
 def toit2(x, y_sol, niveau):
     print("\nToit2 file")
     '''
@@ -12,8 +13,9 @@ def toit2(x, y_sol, niveau):
     '''
     pensize(4)
     up()
-    goto(x,y_sol+(60*niveau))
-    forward(140//2+10)
+    goto(x, y_sol+(60*niveau))
+    backward(280)
+    forward(140)
     down()
     color("black")
     begin_fill()
@@ -21,7 +23,8 @@ def toit2(x, y_sol, niveau):
     forward(85)
     end_fill()
 
+
 if __name__ == '__main__':
-    toit1(0,0,0)
+    toit2(0, 0, 0)
     # On ferme la fenêtre s'il y a un clique gauche
     exitonclick()

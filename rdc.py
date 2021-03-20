@@ -5,6 +5,7 @@ from porte2 import porte2
 from fenetre import fenetre
 from turtle import *
 
+
 def rdc(x, y_sol, c_facade, c_porte):
     print("\nRDC File")
     '''
@@ -19,36 +20,45 @@ def rdc(x, y_sol, c_facade, c_porte):
         Puis les 3 élements : 1 porte et 2 fenêtres disposées au hasard
     '''
     facade(x, y_sol, c_facade, 0)
-  
-    liste=["porte","fenetre","fenetre"]
-    shuffle(liste)
-    print("Liste >>>>", liste)
+    
+    i = randint(1, 3)
+    print("i", i)
+    if i == 1:
+        fenetre(x-25, 10)
+        up()
 
-    listepos=[x-50, x, x+50]
-    # Construit les 3 éléments (1 porte et 2 fenetres)
-    for i in range(len(liste)-1):
-      if liste[i]=="porte":
-          # Choisir entre les deux portes
-          b = randint(0, 1)
-          if b==1:
-              setheading(0)
-              porte(listepos[i], y_sol, c_porte)
-              del liste[i]
-              del listepos[i]
-          else:
-              porte2(listepos[i], y_sol, c_porte)
-              del liste[i]
-              del listepos[i]
-          print("Liste{2}",liste)
-          print("Liste position",listepos)
-          
-      if liste[i]=="fenetre":
-          fenetre(listepos[i], y_sol)
-      else:
-          print("else")
-      
+        pendown()
+        fenetre(x, 10)
+        up()
+
+        down()
+        porte(x+25, 0, "red")
+        up()
+
+    elif i == 2:
+        fenetre(x-25, 10)
+        up()
+
+        down()
+        porte(x, 0, "red")
+        up()
+
+        down()
+        fenetre(x+25, 10)
+        up()
+    elif i == 3:
+        porte(x-40, 0, "red")
+        up()
+
+        down()
+        fenetre(x+10, 10)
+        up()
+
+        down()
+        fenetre(x+50, 10)
+        up()
 
 if __name__ == '__main__':
-    rdc(0, 0,"red", "green")
+    rdc(0, 0, "red", "green")
     # On ferme la fenêtre s'il y a un clique gauche
     exitonclick()

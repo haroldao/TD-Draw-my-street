@@ -11,7 +11,7 @@ def toit1(x, y_sol, niveau):
     et de hauteur centrale 40 pixels
     '''
     up()
-    goto(x,y_sol+(60*niveau))
+    goto(x, y_sol+(60*niveau))
     left(180)
     forward(140//2+10)
     left(180)
