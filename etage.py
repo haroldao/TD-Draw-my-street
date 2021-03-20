@@ -1,8 +1,9 @@
 from facade import facade
-from random import shuffle,randint
+from random import shuffle, randint
 from fenetre import fenetre
 from fenetre_balcon import fenetre_balcon
 import turtle
+
 
 def etage(x, y_sol, couleur, niveau):
     print("\n Etage file")
@@ -20,12 +21,13 @@ def etage(x, y_sol, couleur, niveau):
     facade(x, y_sol, couleur, niveau)
     # dessin des 3 Eléments
     for i in range(3):
-      i = randint(1, 2)
-      print("i", i)
-      if i == 1:
-        fenetre(x, y)
-      else:
-        fenetre_balcon(x, y)
+        i = randint(1, 2)
+        print("i", i)
+        if i == 1:
+            fenetre(x-25, y+15)
+        else:
+            fenetre_balcon(x-25, y)
+        x += 40
 
 
 if __name__ == '__main__':

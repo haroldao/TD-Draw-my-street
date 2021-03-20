@@ -1,7 +1,8 @@
 from rectangle import rectangle
 from turtle import *
 
-def fenetre(x,y):
+
+def fenetre(x, y):
     print("\n Fenetre file")
     '''
     Paramètres :
@@ -12,16 +13,18 @@ def fenetre(x,y):
 
     '''
     up()
-    goto(x, y)
+    goto(x-15, y)
     down()
     pencolor("black")
     fillcolor("white")
     begin_fill()
-    rectangle(x,y,30,30)
+    rectangle(x-15, y, 30, 30)
     end_fill()
+
+    up()
 
 
 if __name__ == '__main__':
-    fenetre(0,0)
+    fenetre(0, 0)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
