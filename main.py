@@ -2,9 +2,6 @@ import turtle
 from random import randint, shuffle
 from sol import sol
 from immeuble import immeuble
-# ------------------------------
-# ------------------------------
-# ------------------------------
 
 def main():
     turtle.setup(800, 600)
@@ -14,7 +11,8 @@ def main():
     # Dessin du sol de la rue
     sol(y_sol)
     # Dessin des 4 immeubles
-    immeuble(10, -150)
+    for i in range(1):
+      immeuble(10, y_sol)
 
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()

@@ -17,15 +17,13 @@ def immeuble(x, y_sol):
     '''
     # Nombre d'étage (aléatoire)
 
-    nb_etage = randint(0, 4)
+    nb_etage = randint(0, 4) # random entre 0 et 4
+    print(nb_etage)
 
     #Couleurs des éléments (aléatoire)
 
     c_facade = couleur_aleatoire()
     c_porte = couleur_aleatoire()
-
-    for niveau in range(nb_etage):
-      etage(x, y_sol, c_facade, niveau+1)
 
     # Dessin du RDC
 
@@ -33,12 +31,13 @@ def immeuble(x, y_sol):
 
     # Dessin des étages
 
-    pass
+    for niveau in range(nb_etage):
+      etage(x, y_sol, c_facade, niveau+1)
 
     # Dessin du toit
     toit(x, y_sol, nb_etage)
 
 if __name__ == '__main__':
-    immeuble(0,0)
+    immeuble(0, 0)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
