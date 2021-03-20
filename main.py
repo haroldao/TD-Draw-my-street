@@ -5,6 +5,8 @@ from immeuble import immeuble
 
 def main():
     print("Main file\n")
+
+    turtle.clear()
     turtle.setup(800, 600)
     turtle.speed(0)
     # On définit la hauteur du sol
